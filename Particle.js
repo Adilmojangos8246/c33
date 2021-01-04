@@ -8,6 +8,8 @@ class Particle {
       
         this.body = Bodies.circle(x, y, this.r,options);       
         this.color=color(random(0, 255), random(0, 255), random(0, 255));
+        this.body.velocityX=500
+        this.body.velocityY=500
         World.add(world, this.body);
 
     }
